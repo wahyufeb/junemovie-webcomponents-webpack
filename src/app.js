@@ -1,4 +1,7 @@
-import main from "./view/main.js";
-import "./assets/styles/style.css";
+import 'regenerator-runtime';
+import './components/nav-bar';
+import './components/popular-movie';
+import main from './view/main';
+import './assets/styles/style.css';
 
-document.addEventListener("DOMContentLoaded", main);
+document.addEventListener('DOMContentLoaded', main);

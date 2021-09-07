@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #3D087B;
+  --primary-dark: #11052C;
+  --dark-blue: #0D0424;
+  --text-color: #FAFAFA;
+}
+
+body {
+  background-color: var(--primary-dark);
+  font-family: 'Arial';
+}
+
+/* Trending */
+.trending, .upcomming{
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+.trending h2, .upcomming h2, .search-results h2 {
+  padding-left: 30px;
+  color: var(--text-color);
+  margin-bottom: -20px;
+}
+
+.wrapper-card {
+  margin-top: 20px;
+}
+
+.caraousel {
+  overflow: auto;
+  display: flex;
+  padding: 50px 0;
+  padding-left: 30px;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.card {
+  margin-right: 30px;
+}
+
+.card img {
+  border-radius: 10px;
+  transition: .3s ease-in-out;
+  object-fit: cover;
+}
+
+.card:hover img {
+  margin-top: -20px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+/* End Trending */
+
+/* Footer */
+footer {
+  padding: 10px;
+  text-align: center;
+  color: var(--text-color);
+  background-color: var(--primary);
+}
+/* End Footer */
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary-dark);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #150638;
+  border-radius: 10px;
+}
+/* End Scrollbar */
